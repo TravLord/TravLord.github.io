@@ -1,0 +1,238 @@
+body {
+    margin: 0%; /*ensures display all the way to edge of browser screen*/
+}
+/*HEADING 1 ELEMENTS */
+h1 {
+    text-transform: uppercase; /*CAPS H1 HEADINGS*/
+    font-family: "Trebuchet MS" , Optima; 
+    text-align: center;
+    margin-top: 3%; /*ADDS SMALL MARGIN ABOVE H1 ELEMENTS*/
+    color: #1a1a1a;
+}
+
+ /* HEADING 1 ELEMENT HOVER EFFECT */
+ h1:hover {
+        filter: grayscale(5%);
+        transform: scale(1.1); /*INCREASES SIZE OF HEADING .1*/
+        transition: transform 1s; /*SETS TIME OF TRANSFORMATION(THIS CASE INCREASED SIZE)*/
+        
+}
+
+    /* STYLING FOR PORTFOLIO TITLE TEXT */
+.white-text {
+    color:rgb(156, 253, 248);; /* THIS CHANGES THE COLOR TO WHITE FOR PORTFOLIO TITLE TEXT */   
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify; 
+    letter-spacing: 1px; /* expands text slightly*/
+    font-size:20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/* CENTER CLASS BEGINS */
+.center {
+    text-align: center;
+}
+.center:hover {
+    transition: transform 2s;
+    transform:scale(1.1);
+}
+
+a {
+    color:cornflowerblue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block; /* BY SPECIFYING THE BLOCK DISPLAY WE CAN ENSURE OUR IMAGES ARE ABLE TO BE CENTERED*/
+    margin-left: auto; /* IN COMBINATION WITH MARGIN-RIGHT THIS CENTERS ALL IMGS*/
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition:transform 1s;
+    transform: scale(1.1);
+}
+
+/* @MEDIA RULE IS USED IN MEDIA QUIERIES TO APPLY DIFFERENT STYLES FOR DIFFERENT DEVICES/MEDIA TYPES */
+/* ON SCREENS 576PX AND SMLLR THE IMG WILL BE 100PX TALL CENTERED VERTICALLY IN COLUMN*/
+@media screen and (max-width:576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+
+    }
+    
+}
+
+footer {
+    padding:2%;
+    background-color: white;
+}
+
+/******** END OF GENERAL STYLING **********/
+
+/*******NAVBAR STYLING*****/
+.Navbar {
+    overflow: hidden; /* THIS HIDES OVERFLOW OF CONTENT PAST THE BOUNDARY OF NAVBAR*/
+    background-color: black;
+    position: fixed; /* KEEPS NAVBAR ON TOP OF SCREEN AS WE SCROLL DOWN*/
+    top: 0; /* NO SPACE ABOVE NAVBAR*/
+    width: 100%; /*SPAN ENTIRE WIDTH OF PAGE*/
+    z-index: 1; /*ENSURES NAVBAR IS ON TOP OF OTHER ELEMENTS*/
+    -webkit-animation: moveNav 5s; /* APPLIES MOVNAV ANIMATION BELOW FOR SAFARI 4.0-8.0*/
+    animation: moveNav 5s; /*THIS APPLIES ANIMATION FOR ALL OTHER BROWSERS*/
+}
+
+/*MOVENAV ANIMATION FOR MOVING NAV BAR IN FROM THE LEFT OF THE SCREEN*/
+@keyframes moveNav {
+    from { left: -100vw;} /* THE NAV BAR IS STARTING OFF THE SCREEN TO THE LEFT*/
+    to { left: 0vw;} /* THIS MOVES THE NAVBAR INTO PLACE ON THE SCREEN*/
+}
+
+.Navbar a {
+    float: left; /*TXT FLOAT ON LEFT OF NAVBAR*/
+    display: block; /*all txt on same row*/
+    color:rgb(156, 253, 248);
+    padding: 14px 16px; /*padding around txt*/
+    text-decoration: none; /*gets rid of underlines*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative; /* THIS SETES THE TEXT RELATIVE TO ITS NORMAL POSITIONING, ALLOWING US TO USE THE ANIMATION BELOW */
+    -webkit-animation: moveNavText 5.75s; 
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from {top:-100vw;} /* THIS SETS THE NAVBAR TEXT 100% ABOVE THE VEIWPORT (OUT OF VIEW)*/
+    to {top:0vw;} /*THIS LOWERS THE NAVBAR TEXT ONTO THE NAVBAR FROM ABOVE VIEW*/
+}
+
+/* SCREENS 576PX AND SMALLER WILL DISPLAY NAVBAR LINKS EQUALLY DISTRIBUTED*/
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width:25%; /* THIS MAKES EACH LINK TAKE UP 1/4 OF THE NAVBAR*/
+        font-size: 12px;
+    }
+}
+.Navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+/*NAVBAR HOME BUTTON*/
+.Navbar a.active {
+    background-color: darkgrey;
+}
+/*******VIDEO STYLING*******/
+/*FOTMATTING FOR BACKGROUND VIDEO */
+#Typing_Video {
+    position: fixed;  /*FIXES VIDEO TO PAGE*/
+    right:0; /* NO SPACE BETWEEN EDGE OF VIDEO AND EDGE OF PAGE*/
+    bottom:0; /*NO SPACE BETWEEN BOTTOM OF VIDEO AND BOTTOM OF PAGE*/
+    top: 0;
+    min-width:100%; /* VIDEO WILL BE DISPLAYED ACROSS THE FULL WIDTH OF THE PAGE*/
+    z-index: -1; /*VIDEO WILL BE BEHIND OTHER ELEMENTS ON PAGE*/
+}
+
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+.Video_Text {
+    background: rgba(0,0,0,0.5); /* This provides a semi-transparent background for the text to sit over */
+    color: white;
+    width:100%; /* makes Text container fill width of window*/
+    padding:5px;
+    position:relative; /*allows us to use animation below*/
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+@keyframes moveVideoText {
+    from {top: -100vw;} /*Set position of the video test to above viewport*/
+    to {top: 0vw;} /*below viewport*/ 
+}
+/*******END OF VIDEO STYLING******/
+
+/***********TABLE STLYLING - THIS SECTION COVERS THE STYLING OF THE ROWS AND COLUMNS WITHIN THE TABLE *****/
+* {
+    box-sizing:border-box; /*CREATES BOX WITH BORDER WHERE WE WILL PLACE MOST OF OUR TEXT*/
+}
+
+.Column_1 {
+    float:left; 
+    width:50%; /* column to take up half of screen width*/
+    padding: 10px;
+    padding-top: 0; /*SPACE BETWEEN TOP OF THE COLUMN AND OUR HEADINGS*/
+    height:400px;
+    background-color: #f2f2f2;
+
+}
+.Column_2 {
+    float:left;
+    width:50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height:400px;
+    background-color: #4d4d4d;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height:450px;
+}
+.Row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+/*CONTACT FORM STYLING*/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; 
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}    

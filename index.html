@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Travis Lord</title>
+        <link rel="stylesheet" type="text/css" href="Portfolio_Website.css" >
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class ="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--BREAKS INSERTED TO ADD SPACE BETWEEN NAVBAR AND THE FIRST HEADING  -->
+        <br>
+        <br>
+
+        <!-- BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="Images_Videos/Circuit_Board.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT -->
+        <div class= "Video_Text">
+            <h1 class="white-text">Travis Lord's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Our future success is directly proportional to our ability to 
+                        <br>understand, adopt and integrate new technology into our work.</q>
+                        <br>
+                    
+                    <br>-Sukant Ratnakar
+                    <br>
+                    <br>My name is Travis Lord.  Welcome to my portfolio website.  Take a look around , to see my background and experience.
+                    <br>
+                    <br>Thanks for your time, I look forward to hearing from you!                    
+                </p>
+            </strong>
+        </div>
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="Images_Videos/Computer.jpeg" alt="Error image will not display">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>I'm a loving father of three girls and I love software development!  I enjoy coding and thrive in a creative, collaborative environment. Its always exciting to see what we learn, and can build when we work together!
+                    <br>
+                    <br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, I'm trained and experienced in the follwing web based and programming languages: HTML, CSS, JavaScript, SQL, and C#.
+                    
+                    
+                    <br> I am a full-stack developer who is motivated to learn and contribute where ever is needed.  I would be honored to work with you on your project! 
+                    Feel free to <a href="#Contact">contact</a> me in the below form, thanks again for your time!
+                    
+                </p>
+            </div>
+            
+        </div>
+        
+        <!---GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/TravLord" target="_blank"></a>Travis Lord's GitHub</p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="https://github.com/TravLord" target="_blank"><img src="Images_Videos/GitHub_Logo.png" alt="Github pic"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+        <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="Images_Videos/Electrical_Wires.jpg" alt="Contact_Image">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA-->
+                <form action="https://formspree.io/f/xyylrjga" method="post"> <!--WE ARE UTILIZING A 3RD PARTY SERVICE TO SUBMIT THE CONTACT FORM DATE I.E. FORMSPREE-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" name="Email" placeholder="Please enter your Email here">
+                    <label>Message:</label>
+                        <input type="text" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">                        
+                </form>
+            </div>
+
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc.<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
