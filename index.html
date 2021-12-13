@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Travis Lord</title>
         <link rel="stylesheet" type="text/css" href="Portfolio_Website.css" >
+        
     </head>
 
     <!--BODY-->
@@ -12,9 +13,11 @@
         <!--NAVBAR-->
         <div class ="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!--Onclick and ondblclick functions to open and close contact form-->
+            <a onclick="open_form()" ondblclick="close_form()" class="contact">Contact</a>
         </div>
 
         <!--BREAKS INSERTED TO ADD SPACE BETWEEN NAVBAR AND THE FIRST HEADING  -->
@@ -31,7 +34,7 @@
 
         <!--VIDEO TEXT -->
         <div class= "Video_Text">
-            <h1 class="white-text">Travis Lord's Portfolio</h1>
+            <h1 class="white_text">Travis Lord's Portfolio</h1>
             <strong>
                 <p class="center">
                     <q>Our future success is directly proportional to our ability to 
@@ -46,6 +49,58 @@
                 </p>
             </strong>
         </div>
+        <!--Slideshow section -->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--slide 1/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/IMG_0993ADJ.jpg" alt="A Picture of me, error rendering image.">
+                        <div class="text">I can assist you on your project!</div>
+                    </div>
+                    <!--slide 2/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/HTML_CSS_and_JavaScript.jpeg" alt=" Error rendering image.">
+                        <div class="text">I am a full stack dev! <br> Trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--slide 3/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/Python.png" alt=" Error rendering image.">
+                        <div class="text">Python,</div>
+                    </div>
+                    <!--slide 4/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/C_Sharp_and_Dot_NET.png" alt=" Error rendering image.">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+                    <!--slide 5/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/SQL_and_Database.jpg" alt=" Error rendering image.">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!--slide 6/6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_imgs" src="Images_Videos/Dual_MonitorAdj.jpeg" alt=" Error rendering image.">
+                        <div class="text"><a class="white_text contact" onclick="open_form()">Contact me now!</a></div>
+                    </div>
+                    <!-- Nxt and previous btns-->
+                    <a class="previous" onclick="plus_slides(-1)">&#10094;</a>
+                    <a class="nxt" onclick="plus_slides(1)">&#10095;</a>                    
+                </div>
+                <br> <!--This adds space between imgs and dots-->
+
+                <!--dots alternative way of navigation-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="current_slide(1)"></span>
+                    <span class="dot" onclick="current_slide(2)"></span>
+                    <span class="dot" onclick="current_slide(3)"></span>
+                    <span class="dot" onclick="current_slide(4)"></span>
+                    <span class="dot" onclick="current_slide(5)"></span>
+                    <span class="dot" onclick="current_slide(6)"></span>
+                </div>
+            </div>
+        </div>
+
         <!--ABOUT SECTION-->
         <div class="Row" id="About">
             <!--LEFT COLUMN-->
@@ -55,17 +110,12 @@
             <!--RIGHT COLUMN-->
             <div class="Column_1">
                 <h1>About</h1>
-                <p>I'm a loving father of three girls and I love software development!  I enjoy coding and thrive in a creative, collaborative environment. Its always exciting to see what we learn, and can build when we work together!
-                    <br>
-                    <br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, I'm trained and experienced in the follwing web based and programming languages: HTML, CSS, JavaScript, SQL, and C#.
-                    
-                    
-                    <br> I am a full-stack developer who is motivated to learn and contribute where ever is needed.  I would be honored to work with you on your project! 
-                    Feel free to <a href="#Contact">contact</a> me in the below form, thanks again for your time!
-                    
-                </p>
-            </div>
-            
+                <p>I'm a loving father of three girls! We love to travel and I love software development!</p> 
+                    <p>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, I'm trained and experienced in the follwing web based and programming languages: HTML, CSS, JavaScript, SQL, and C#.</p>                 
+                    <p>I'm a full-stack developer who is ready to solve problems and contribute.  I'm honored to work with you on your project!</p><p><a onclick="open_form()" class="contact">&nbsp; Contact&nbsp;</a> me below!</p> 
+                                    
+                
+            </div>            
         </div>
         
         <!---GITHUB SECTION-->
@@ -73,13 +123,10 @@
             <!--LEFT COLUMN-->
             <div class="Column_1">
                 <h1>GitHub</h1>
-                    
-                    <p class="Column_Github">
-                    You can view my coding projects on my GitHub profile here:
+                <p>You can view my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/TravLord" target="_blank">Travis Lord's GitHub</a></p>
-                    </p>
-                    
+                </p>
             </div>
             <!--RIGHT COLUMN-->
             <div class="Column_2">
@@ -87,24 +134,23 @@
             </div>
         </div>
 
-        <!--CONTACT SECTION-->
-        <div class="Row" id="Contact">
-        <!--CONTACT IMAGE, LEFT COLUMN-->
-            <div class="Column_2 Column_tall">
-                <img src="Images_Videos/Electrical_Wires.jpg" alt="Contact_Image">
-            </div>
-            <!--CONTACT FORM, RIGHT COLUMN-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA-->
-                <form action="https://formspree.io/f/xyylrjga" method="post"> <!--WE ARE UTILIZING A 3RD PARTY SERVICE TO SUBMIT THE CONTACT FORM DATE I.E. FORMSPREE-->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" name="Email" placeholder="Please enter your Email here">
-                    <label>Message:</label>
-                        <input type="text" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">                        
+        <!--CONTACT form SECTION-->
+        <div id="Contact">
+            <button onclick="open_form()" class="pop_up_button">CONTACT</button>
+            <div class="form_popup" id="my_form">
+                <form action="https://formspree.io/f/xyylrjga" method="post" class="form_container"> <!--WE ARE UTILIZING A 3RD PARTY SERVICE TO SUBMIT THE CONTACT FORM DATE I.E. FORMSPREE-->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Please enter your phone number here" name="phone">
+                    <label for="email"><b>Email:</b></label>
+                        <input type="text" name="Email" placeholder="Please enter your Email address here" name="email" required>
+                    <label for="message"><b>Message:</b></label>
+                        <input type="text" name="Message" placeholder="Please write your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="close_form()">CLOSE</button>                      
                 </form>
             </div>
 
@@ -112,10 +158,8 @@
 
         <!--FOOTER SECTION-->
         <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc.<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
+            <p class="center">&copy Prosper Consulting Inc.<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
         </footer>
+        <script src="JS/Portfolio_Website.js"></script>
     </body>
 </html>
