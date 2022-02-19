@@ -11,7 +11,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden; /* This keeps the horizontal scroll bar from being visible when the quote is hovered over.*/
     user-select: none; /* Prevents any text from being highlighted*/
-    color: #36405a;
+    background-color: #1c2949;
 }
 body.fade-out {
     opacity: .1; /* as page loads*/
@@ -195,7 +195,7 @@ footer {
     }
 }
 .Video_Text {
-    background: rgba(0,0,0,0.2); /* This provides a semi-transparent background for the text to sit over */
+    background: rgba#1c2949; /* This provides a semi-transparent background for the text to sit over */
     color: white;
     width:100%; /* makes Text container fill width of window*/
     height: 100vh;
