@@ -26,7 +26,7 @@
 
         <!-- BACKGROUND VIDEO-->
         <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
+            <video autoplay muted loop id="Circuit_Video">
                 <source src= "Images_Videos/Circuit_Board.mp4" type="video/mp4">
                 Your browser doesn't support HTML5 video.
             </video>
@@ -35,19 +35,21 @@
         <!--VIDEO TEXT -->
         <div class= "Video_Text">
             <h1 class="white_text">Travis Lord's Portfolio</h1>
-            <strong>
+            
                 <p class="center">
                     <q>Our future success is directly proportional to our ability to 
                         <br>understand, adopt and integrate new technology into our work.</q>
-                        <br>
-                    
+                        
+                 
                     <br>-Sukant Ratnakar
                     <br>
-                    <br>My name is Travis Lord.  Welcome to my portfolio website.  Take a look around , to see my background and experience.
+                    <br>My name is Travis Lord.  Welcome to my portfolio website.  
+                    <br>
+                    Take a look around and see my background and experience.
                     <br>
                     <br>Thanks for your time, I look forward to hearing from you!                    
                 </p>
-            </strong>
+            
         </div>
         <!--Slideshow section -->
         <div id="slideshow">
@@ -87,7 +89,7 @@
                     <a class="previous" onclick="plus_slides(-1)">&#10094;</a>
                     <a class="nxt" onclick="plus_slides(1)">&#10095;</a>                    
                 </div>
-                <br> <!--This adds space between imgs and dots-->
+                <br id="About"> <!--This adds space between imgs and dots-->
 
                 <!--dots alternative way of navigation-->
                 <div style="text-align: center;">
@@ -102,7 +104,7 @@
         </div>
 
         <!--ABOUT SECTION-->
-        <div class="Row" id="About">
+        <div class="Row" >
             <!--LEFT COLUMN-->
             <div class="Column_2">
                 <img src="Images_Videos/Computer.jpeg" alt="Error image will not display">
@@ -111,8 +113,8 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>I'm a loving father of three girls! We love to travel and I love software development!</p> 
-                    <p>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, I'm trained and experienced in the follwing web based and programming languages: HTML, CSS, JavaScript, SQL, and C#.</p>                 
-                    <p>I'm a full-stack developer who is ready to solve problems and contribute.  I'm honored to work with you on your project!</p><p><a onclick="open_form()" class="contact">&nbsp; Contact&nbsp;</a> me below!</p> 
+                    <p>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Software Developer Boot Camp. I'm trained and experienced in the follwing web based and programming languages: HTML, CSS, JavaScript, SQL, C#, Python, Django, .NET Framework, ASP.NET, and MVC.</p>                 
+                    <p>I'm a full-stack developer who is ready to solve problems and contribute.<a onclick="open_form()" class="contact"> Contact&nbsp;</a> me below!</p> 
                                     
                 
             </div>            
@@ -125,7 +127,7 @@
                 <h1>GitHub</h1>
                 <p>You can view my coding projects on my GitHub profile here:
                     <br>
-                    <p class="center"><a href="https://github.com/TravLord" target="_blank">Travis Lord's GitHub</a></p>
+                    <p class="GitLink"><a href="https://github.com/TravLord" target="_blank">Travis Lord's GitHub</a></p>
                 </p>
             </div>
             <!--RIGHT COLUMN-->
@@ -158,7 +160,7 @@
 
         <!--FOOTER SECTION-->
         <footer>
-            <p class="center">&copy Prosper Consulting Inc.<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            <p class="left-center">&copy Prosper Consulting Inc.&nbsp;<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
         </footer>
         <script src="JS/Portfolio_Website.js"></script>
     </body>

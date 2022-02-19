@@ -11,6 +11,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden; /* This keeps the horizontal scroll bar from being visible when the quote is hovered over.*/
     user-select: none; /* Prevents any text from being highlighted*/
+    color: #36405a;
 }
 body.fade-out {
     opacity: .1; /* as page loads*/
@@ -41,7 +42,7 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify; 
     letter-spacing: .1vw; /* expands text slightly*/
-    font-size:2.5vw; 
+    font-size:2.3vw; 
     padding-left: 1vw;   /* Changing sizing in multiple areas from px to vw for responsive text*/
     padding-right: 1vw;
 }
@@ -54,6 +55,20 @@ p:hover {
 /* CENTER CLASS BEGINS */
 .center {
     text-align: center;
+    font-size: 2.3vw; 
+    padding-top:10vh;
+}
+.left-center {
+    padding-left: 17%;
+    font-size: 2.3vw; 
+    padding-top:10vh;
+
+}
+.GitLink {
+    text-align: center;
+    font-size: x-large; 
+    padding-top:10vh;
+
 }
 .center:hover {
     transition: transform 2s;
@@ -71,7 +86,7 @@ q {
 }
 
 img {
-    filter: grayscale(58%);
+    filter: grayscale(25%);
     border-radius: 8px;
     max-width: 100%;
     max-height: 100%;
@@ -158,10 +173,15 @@ footer {
     background-color: darkgrey;
 }
 /*******VIDEO STYLING*******/
-/*FOTMATTING FOR BACKGROUND VIDEO */
-#Typing_Video {
+/*FORTMATTING FOR BACKGROUND VIDEO */
+
+
+
+
+#Circuit_Video {
     position: fixed;  /*FIXES VIDEO TO PAGE*/
-    right:0; /* NO SPACE BETWEEN EDGE OF VIDEO AND EDGE OF PAGE*/
+    right:0;
+    left: 0; /* NO SPACE BETWEEN EDGE OF VIDEO AND EDGE OF PAGE*/
     bottom:0; /*NO SPACE BETWEEN BOTTOM OF VIDEO AND BOTTOM OF PAGE*/
     height: 100%;
     top: 0;
@@ -180,6 +200,7 @@ footer {
     width:100%; /* makes Text container fill width of window*/
     height: 100vh;
     padding:2vh;
+    font-size: large;
     position:relative; /*allows us to use animation below*/
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
@@ -198,7 +219,8 @@ footer {
 #slideshow_container {
     width: 39.5vw; /* relative sizing of the container for slideshow 39.5 viewport width */
     height: auto; /* height of container is auto adjusted based on content it is displaying*/
-    padding-top: 4%;
+    padding-top: 0;
+    background: rgba(255, 255, 255, 0);
     position: relative; /* sets container relative to normal positioning*/
     margin: auto; /* Horizontally centers the container on the page*/
 }
@@ -219,7 +241,7 @@ footer {
     padding: 2vw;
     color: black;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 3.5vw;
     border-radius: 0 3px 0 3px 0; /* Adds rounded corners on top and bottom right corners*/
     user-select: none; /* user cannot highlight text*/
     transition: 0.6 ease; /* This specifies the details of the hvr trans for prv nxt elemnets*/
