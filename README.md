@@ -1,6 +1,6 @@
-# This the portfolio website for Travis Lord
+# Portfolio website  -Travis Lord
 
-## It contains:
+## This webpage contains:
 
 - A short personal bio.
 - A description of my experience and knowledge based in programming languages and frameworks.
