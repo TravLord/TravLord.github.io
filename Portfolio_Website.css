@@ -11,7 +11,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden; /* This keeps the horizontal scroll bar from being visible when the quote is hovered over.*/
     user-select: none; /* Prevents any text from being highlighted*/
-    background-color: #1c2949;
+    /* background-color: #1c2949; */
 }
 body.fade-out {
     opacity: .1; /* as page loads*/
@@ -33,7 +33,7 @@ h1 {
 }
 
     /* STYLING FOR PORTFOLIO TITLE TEXT */
-.white_text {
+.blue_text {
     color:rgb(156, 253, 248);; /* THIS CHANGES THE COLOR TO WHITE FOR PORTFOLIO TITLE TEXT */
     padding-top: 10vh; /* This pads the top of the text 10% of the viewport height*/   
 }
@@ -41,7 +41,7 @@ h1 {
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify; 
-    letter-spacing: .1vw; /* expands text slightly*/
+    letter-spacing: .05vw; /* expands text slightly*/
     font-size:2.3vw; 
     padding-left: 1vw;   /* Changing sizing in multiple areas from px to vw for responsive text*/
     padding-right: 1vw;
@@ -49,7 +49,7 @@ p {
 
 p:hover {
     transition: transform 1s;
-    transform: scale(1.01);
+    transform: scale(1.03s);
 }
 
 /* CENTER CLASS BEGINS */
@@ -57,6 +57,10 @@ p:hover {
     text-align: center;
     font-size: 2.3vw; 
     padding-top:10vh;
+}
+br {
+    color:white;
+
 }
 .left-center {
     padding-left: 17%;
@@ -81,9 +85,7 @@ a {
     text-decoration: underline;
 }
 
-q {
-    font-style: italic;
-}
+
 
 img {
     filter: grayscale(25%);
@@ -125,8 +127,8 @@ footer {
     top: 0; /* NO SPACE ABOVE NAVBAR*/
     width: 100%; /*SPAN ENTIRE WIDTH OF PAGE*/
     z-index: 1; /*ENSURES NAVBAR IS ON TOP OF OTHER ELEMENTS*/
-    -webkit-animation: moveNav 5s; /* APPLIES MOVNAV ANIMATION BELOW FOR SAFARI 4.0-8.0*/
-    animation: moveNav 5s; /*THIS APPLIES ANIMATION FOR ALL OTHER BROWSERS*/
+    -webkit-animation: moveNav 2.75s; /* APPLIES MOVNAV ANIMATION BELOW FOR SAFARI 4.0-8.0*/
+    animation: moveNav 2.75s; /*THIS APPLIES ANIMATION FOR ALL OTHER BROWSERS*/
 }
 
 /*MOVENAV ANIMATION FOR MOVING NAV BAR IN FROM THE LEFT OF THE SCREEN*/
@@ -145,8 +147,8 @@ footer {
     font-size: 1.5vw;
     text-align: center;
     position: relative; /* THIS SETES THE TEXT RELATIVE TO ITS NORMAL POSITIONING, ALLOWING US TO USE THE ANIMATION BELOW */
-    -webkit-animation: moveNavText 5.75s; 
-    animation: moveNavText 5.75s;
+    -webkit-animation: moveNavText 2.75s; 
+    animation: moveNavText 2.75s;
 }
 
 @keyframes moveNavText {
@@ -176,7 +178,9 @@ footer {
 /*FORTMATTING FOR BACKGROUND VIDEO */
 
 
-
+Home {
+    border-radius: 0px 5px 0px 5px;
+}
 
 #Circuit_Video {
     position: fixed;  /*FIXES VIDEO TO PAGE*/
@@ -194,24 +198,37 @@ footer {
         display: none;
     }
 }
-.Video_Text {
-    background: rgba#1c2949; /* This provides a semi-transparent background for the text to sit over */
+h7  {
+    font-style: italic;
+    background: rgba #1c2949; /* This provides a semi-transparent background for the text to sit over */
+    color: white;
+    width:100%; /* makes Text container fill width of window*/
+    height: 100vh;
+    font-size: large;
+    position:relative; /*allows us to use animation below*/
+    -webkit-animation: moveVideoText 2.75s;
+    animation: moveVideoText 2.75s;
+}
+ q   {
+    font-style: italic;
+    background: rgba #1c2949; /* This provides a semi-transparent background for the text to sit over */
     color: white;
     width:100%; /* makes Text container fill width of window*/
     height: 100vh;
     padding:2vh;
     font-size: large;
     position:relative; /*allows us to use animation below*/
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 2.75s;
+    animation: moveVideoText 2.75s;
 }
+
 @keyframes moveVideoText {
     from {top: -100vw;} /*Set position of the video test to above viewport*/
     to {top: 0vw;} /*below viewport*/ 
 }
 /*******END OF VIDEO STYLING******/
-#slideshow_background {
-    background: rgba(255, 255, 255, 0);
+ #slideshow_background {
+     background: rgba(255, 255, 255, 0);  
 }
 .mySlides {
     display: none; /* hides images for slideshow, will display using js loops*/
@@ -313,6 +330,110 @@ footer {
     padding: 1.6px;
     height:400px;
     background-color: #f2f2f2; /* SETS THE BACKGROUND COLOR FOR BOTH LEFT COLUMNS*/
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: "Open Sans", "Arial";
+  background: black;
+}
+h2 {
+  color: #FFF;
+}
+
+
+main {
+  margin: 50px auto;
+  width: 500px;
+}
+section {
+  margin-top: 30px;
+  background: #E3F9F9;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+.dropdown {
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.dropdown > a, .dropdown.toggle > label {
+  border-radius: 2px;
+  box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
+}
+.dropdown > a::after, .dropdown.toggle > label::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgb(26, 22, 22);
+}
+.dropdown ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.dropdown a, .dropdown.toggle > label {
+  display: block;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 1.5vw;
+  
+  font-weight: bold;
+  color: black;   /*color for drop down text*/
+  background-color: #FFF;
+}
+.dropdown li {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+}
+.dropdown.hover li {
+  transition-delay: 200ms;
+}
+.dropdown li:first-child a {
+  border-radius: 2px 2px 0 0;
+}
+.dropdown li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+.dropdown li:first-child a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  margin: -10px 0 0 30px;
+}
+.dropdown a:hover, .dropdown.toggle > label:hover, .dropdown.toggle > input:checked ~ label {
+  background-color: #EEE;
+  color: #666;
+}
+.dropdown > a:hover::after, .dropdown.toggle > label:hover::after, .dropdown.toggle > input:checked ~ label::after {
+  border-top-color: #AAA;
+}
+.dropdown li:first-child a:hover::before {
+  border-bottom-color: #EEE;
+}
+.dropdown.hover:hover li, .dropdown.toggle > input:checked ~ ul li {          
+  height: 40px;
+}
+.dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
+  padding-top: 15px;
 }
 .Column_2 {
     float:left;
@@ -475,14 +596,22 @@ button:hover, .form_container .btn:hover {
 
 /*MEDIA RULES TO ENLARGE FONT OF THE WHITE TEXT FOR SMLR SCREENS*/
 @media screen and (max-width:1080px) {
-    .quote{
-        font-size: 3.5vw;
+    q{
+        font-size: 2.5vw;
     }
 
     .white-text {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
 }
+@media screen and (max-width:2270px) {
+    q{
+        font-size: 2.5vw;
+    }
+
+    .white-text {
+        font-size: 2.5vw;
+    }
 /*MEDIA RULES TO INCREASE THE SIZE OF COLUMNS FOR LARGER SCREENS */
 @media screen and (min-width:1725px) {
    .Column_1 {
@@ -498,4 +627,4 @@ button:hover, .form_container .btn:hover {
     h1{
         margin-top:0;
     }
-}
+}}
