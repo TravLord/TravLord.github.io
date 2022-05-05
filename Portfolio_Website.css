@@ -594,6 +594,40 @@ button:hover, .form_container .btn:hover {
     }
 }
 
+@media screen and (max-width: 527px) {
+    q{
+        font-size: 5.0vw;
+    }
+    .white-text {
+        font-size: 5.5vw;
+    }
+}
+
+@media screen and (min-width:528px) and (max-width:660px) {
+    q { 
+        font-size: 4.0vw;
+    }
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+@media screen and (min-width:661px) and (max-width:799px) {
+    q {
+        font-size: 4.5vw;
+    }
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+@media screen and (min-width:800px) and (max-width:924px) {
+    q {
+        font-size: 3vw;
+    }
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+
 /*MEDIA RULES TO ENLARGE FONT OF THE WHITE TEXT FOR SMLR SCREENS*/
 @media screen and (max-width:1080px) {
     q{
