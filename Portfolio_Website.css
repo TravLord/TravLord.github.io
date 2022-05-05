@@ -41,7 +41,7 @@ h1 {
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify; 
-    letter-spacing: .05vw; /* expands text slightly*/
+    letter-spacing: .075vw; /* expands text slightly*/
     font-size:2.3vw; 
     padding-left: 1vw;   /* Changing sizing in multiple areas from px to vw for responsive text*/
     padding-right: 1vw;
@@ -538,43 +538,43 @@ button:hover, .form_container .btn:hover {
 /* MEDIA RULES PARAGRAPH FONT SIZE FOR DIFFERENT SCREEN SIZES*/
 @media screen and (max-width: 527px) {
     p{
-        font-size: 3.75vw;
+        font-size: 3.0vw;
     }
 }
 
 @media screen and (min-width:528px) and (max-width:660px) {
     p { 
-        font-size: 3.5vw;
+        font-size: 3.0vw;
     }
 }
 @media screen and (min-width:661px) and (max-width:799px) {
     p {
-        font-size: 2.75vw;
+        font-size: 2.5vw;
     }
 }
 @media screen and (min-width:800px) and (max-width:924px) {
     p {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
 @media screen and (min-width:925px) and (max-width:1050px) {
     p {
-        font-size: 2.25vw;
+        font-size: 2.15vw;
     }
 }
 @media screen and (min-width:1051px) and (max-width:1310px) {
     p {
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
 }
 @media screen and (min-width:1311px) and (max-width:1535px) {
     p {
-        font-size: 1.75vw;
+        font-size: 1.6vw;
     }
 }
 @media screen and (min-width:1536px) and (max-width:2269px) {
     p {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
     }
 }
 
@@ -621,6 +621,7 @@ button:hover, .form_container .btn:hover {
        height: 550px;
    }
 }
+
 /* MEDIA RULE TO REMOVE MARGIN-TOP FROM H1 ELEMENTS FOR LARGE SCREENS SO THAT THE PARAGRAPH FITS IN THE COLUMN*/
 
 @media screen and (min-width: 2000px) {
