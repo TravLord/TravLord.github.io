@@ -34,13 +34,13 @@ h1 {
 
     /* STYLING FOR PORTFOLIO TITLE TEXT */
 .blue_text {
-    color:rgb(156, 253, 248);; /* THIS CHANGES THE COLOR TO WHITE FOR PORTFOLIO TITLE TEXT */
+    color:rgb(156, 253, 248); /* THIS CHANGES THE COLOR TO WHITE FOR PORTFOLIO TITLE TEXT */
     padding-top: 10vh; /* This pads the top of the text 10% of the viewport height*/   
 }
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify; 
+    text-align:justify; 
     letter-spacing: .075vw; /* expands text slightly*/
     font-size:2.3vw; 
     padding-left: 1vw;   /* Changing sizing in multiple areas from px to vw for responsive text*/
@@ -66,7 +66,8 @@ br {
     padding-left: 17%;
     font-size: 2.3vw; 
     padding-top:10vh;
-
+    color: rgb(71, 67, 67);
+    text-decoration: underline;
 }
 .GitLink {
     text-align: center;
