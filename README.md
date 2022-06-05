@@ -4,7 +4,7 @@
 
 > - A short personal bio.
 > - A description of my experience and knowledge based in programming languages and frameworks.
-> - A Javascript slideshow
-> - Links to my contact form, github profile, and The Tech Academy. 
-> - Drop down with project links to repositories
+> - A Javascript slideshow encompassing technologies and languages that I've learned and am experienced in. 
+> - Pure CSS Drop down list menu with links to my internships, projects, github profile, and repositories.
+> - A wordspree contact form linked to my email for correspondence.
 
