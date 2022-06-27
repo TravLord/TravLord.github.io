@@ -1,0 +1,218 @@
+.img-size {
+    width: 70%;
+    background-color: black;
+    margin-left:15%;
+    border-radius: 40px 40px 40px 40px;
+    margin-top: 4%;
+    
+    box-shadow: 0 0 0 1px black;
+    
+
+}
+.overLayText{
+    margin-left:60%;
+    margin-bottom: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-style: italic;
+    
+    
+    
+    
+}
+.jumboColor{
+    /* background-color:rgba(59, 59, 59, 0.2); */
+    background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, white);
+    padding-bottom: 50%;
+}
+
+.navTaby {
+    background-image: linear-gradient(to right, white , black);
+}
+.jumboColor2{
+    background-color:rgba(180, 180, 180, 0.2);
+    
+}
+.jumboColor3 {
+    background-color:rgba(245, 244, 244, 0);
+}
+
+.NavDotLines{
+    
+    po
+    
+}
+.PrevMargin{
+    margin-left: 2%;
+    margin-bottom: 45%;
+}
+.NextMargin {
+    margin-bottom: 45%;
+    margin-right: 0%;
+}
+/* .slideI {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.slideI:hover {
+    background-color:white;
+} */
+
+.caroColor {
+    /* background-color:rgba(7, 7, 7, 0.2); */
+    
+    
+    background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(white, black);
+  color: white;   
+}
+.UnderPicTransClr{
+    background-image: linear-gradient(black,white ); 
+}
+.color{
+    color:black;
+}
+.TitleFont
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}
+.rightInfoIcon{
+    position: relative;
+    margin-left: 5.2%;
+    margin-top:8.95%;
+    z-index: 2;
+}
+.arrowIcon{
+    margin-left:100%;
+    margin-bottom: 68%;
+}
+.LangIcons0{color:rgb(138, 54, 207) ;
+    margin-left: 2%;
+   
+}
+.LangIcons{color:rgb(138, 54, 207) ;
+    
+   
+}
+.LangIcons1{color:rgb(52, 197, 52) ;
+    margin-left: 2%;
+}
+.LangIcons2{color: rgb(247, 179, 53);
+    margin-left: 2%;
+}
+.LangIcons3{color:rgb(119, 163, 228) ;
+    margin-left: 2%;
+}
+.LangIcons4{color:rgb(141, 104, 158) ;
+    margin-left: 2%;
+}
+.LangIcons5{color:rgb(240, 102, 11) ;
+    margin-left: 2%;
+}
+.LangIcons6{color: yellowgreen;
+    margin-left: 2%;
+}
+.CarBtmTitle{
+    margin-top: 0%;
+    text-align: center;
+    color:black;
+    font-weight: 600;
+    font-size: large;
+
+}
+.QuoteOutLine{
+    border-color: 2px white;
+    z-index: 5;
+    background-image: linear-gradient(to top right, white, black);
+    border-radius: 3px 3px 3px 3px;
+    padding-top: 2%;
+}
+.buttonTransP{   
+    border-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+.buttonTransP:hover{
+    color:blue;
+}
+    
+    
+    /* background-color: #2f2f22; */
+    
+    /* padding-bottom:20%;
+    padding-top:20%; */
+}
+.ProfileImage{
+height: 40vw;
+
+/* position: fixed; */
+margin-top: 20.25%;
+margin-left: 15%;
+border-radius: 7px 7px 7px 7px;
+z-index: 1;
+/* box-shadow: 1px 1px 1px 1px black; */
+}
+.IconGroup{
+    text-align: center;
+    padding-left: 45%;
+    background-color: black;
+    color: white;
+}
+
+.PageBG{
+    background-image: linear-gradient(white, rgb(44, 128, 184));
+}
+
+.ProjectCardBorder {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.ContactBG{
+    background-image: linear-gradient(white, #FFDEAD);
+    background-color:#FFDEAD;
+    height:100%;
+    width:100%;
+}
+.ResumeJumbo{
+    background-image: linear-gradient( #FFDEAD,white);
+}
+.ContactBG2{
+    background-image: linear-gradient(#FFDEAD,white);
+}
+.ResumeUnder{
+    background-color: #FFDEAD;
+}
+
+.ContactJumPos{
+    
+}
+/* .ColumnControl{
+    padding-left:100%;
+}
+.ColumnControl2{
+    padding-left: 30%;
+    background-color: black;
+    height: 100%; */
+/* } */
+.ModalStyles{
+    z-index: 3;
+    background-image: linear-gradient(darkgray, #FFDEAD);
+    border-radius: 4px 4px 4px 4px;
+}
+/* .ResumeStyles{
+    display: none;
+}
+.ResumePanel, .ResumeContent{
+    padding: 10px;
+
+} */
+.ResumeContent{
+    
+    display:none;
+    
+}
+/* .ResumeCollapse{
+    display:none;
+} */
