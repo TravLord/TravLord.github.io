@@ -169,12 +169,13 @@ z-index: 1;
 
 .ContactBG{
     background-image: linear-gradient(white, #FFDEAD);
-    background-color:#FFDEAD;
+    background-color:transparent;
     height:100%;
     width:100%;
 }
 .ResumeJumbo{
     background-image: linear-gradient( #FFDEAD,white);
+    /* background-color: transparent; */
 }
 .ContactBG2{
     background-image: linear-gradient(#FFDEAD,white);
