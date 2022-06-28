@@ -143,13 +143,11 @@
     
     /* padding-bottom:20%;
     padding-top:20%; */
-}
+
 .ProfileImage{
 height: 40vw;
-
 /* position: fixed; */
 margin-top: 20.25%;
-margin-left: 15%;
 border-radius: 7px 7px 7px 7px;
 z-index: 1;
 /* box-shadow: 1px 1px 1px 1px black; */
