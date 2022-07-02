@@ -137,6 +137,16 @@
 .buttonTransP:hover{
     color:blue;
 }
+.back-to-top {
+    
+margin-left: 45%;
+font-size: 7vh;
+margin-top: 0%;
+position:-webkit-sticky;
+color: gray;
+position: fixed;
+    
+}
     
     
     /* background-color: #2f2f22; */
