@@ -146,6 +146,7 @@
 
 .ProfileImage{
 height: 40vw;
+margin-left: 50%;
 /* position: fixed; */
 margin-top: 20.25%;
 border-radius: 7px 7px 7px 7px;
