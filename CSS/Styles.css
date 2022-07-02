@@ -127,7 +127,7 @@
     z-index: 5;
     background-image: linear-gradient(to top right, white, black);
     border-radius: 3px 3px 3px 3px;
-    padding-top: 2%;
+    
 }
 .buttonTransP{   
     border-color: transparent;
@@ -139,7 +139,7 @@
 }
 .back-to-top {
     
-margin-left: 42%;
+
 font-size: 7vh;
 margin-top: 01%;
 position:-webkit-sticky;
