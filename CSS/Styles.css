@@ -81,7 +81,7 @@
 .rightInfoIcon{
     position: relative;
     margin-left: 5.2%;
-    margin-top:8.95%;
+    margin-top:5%;
     z-index: 2;
 }
 .arrowIcon{
@@ -130,6 +130,7 @@
     
 }
 .buttonTransP{   
+    position: relative;
     border-color: transparent;
     z-index: 1;
     cursor: pointer;
